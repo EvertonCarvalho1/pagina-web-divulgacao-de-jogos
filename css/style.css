@@ -1,0 +1,295 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	font-family:'KumbhSans-Regular';
+}
+
+html, body{
+
+	height:100%;
+
+}
+@font-face{
+	src:url(../font/KumbhSans-Regular.ttf);
+	font-family:'KumbhSans-Regular';
+}
+
+.header{
+	width:100%;
+	height: auto;
+	background-color: #080808;
+	border-bottom:10px solid rgba(46, 56, 59, 0.7);
+	 
+
+}
+
+.center{
+	width:100%;
+	max-width: 1280px;
+	margin:0 auto;
+
+}
+
+.container-img{
+	padding: 10px;
+}
+
+.img{
+	width: 100px;
+	height: 70px;
+	background-image:url(../images/warzoneguide.jpg);
+	background-size: 100% 100%;
+}
+
+.container-banner{
+	width: 100%;
+	height: 547px;
+	background-image:url(../images/guidewarzone.jpg);
+	background-size: cover;
+
+
+
+}
+.container-banner::after{
+	content: '';
+	clear:both;
+	display: block;
+}
+
+.box-left{
+	float: left;
+	width: 100%;
+	max-width: 579px;
+	height: auto;
+	border: 10px solid rgba(46, 56, 59, 0.5);
+	background-color:#080808;
+	background-clip:padding-box;
+	padding: 30px 30px 10px 30px;
+	margin-top: 30px;
+	font-size: 18px;
+}
+
+.box-left-text ul{
+	list-style-type: none;
+	color:  #dad9d8;
+}
+
+.box-left-text li{
+	margin-bottom:20px;
+}
+
+.form{
+	float: right;
+	position: relative;
+	bottom:26.5px;
+	width: 100%;
+	max-width:400px;
+	height: 600px;
+	background-color:#080808;
+	background-clip:padding-box;
+	border: 10px solid rgba(46, 56, 59, 0.5); 
+	padding: 30px;
+}
+.form form{
+	margin-top: 20px;
+
+}
+
+.form p{
+	color:#dad9d8;
+	font-size:20px;
+	text-align:justify;
+}
+
+ .input-type-text h2{
+	color: #dad9d8;
+	padding-bottom: 10px;
+	font-size:20px;
+	font-weight: normal;
+
+}
+
+.input-type-text input[type=text]{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 30px;
+	font-size: 20px;
+	padding: 0 20px;
+}
+
+.warning h2{
+	font-size:20px;
+	color:#dad9d8;
+	font-weight: normal;
+	margin-bottom:30px;
+}
+.input-submit{
+	text-align: center;
+}
+
+.input-submit input[type=submit]{
+	width: 100%;
+	max-width: 200px;
+	height: 50px;
+	font-size: 20px;
+	background-color:#2a3137;
+	color: white;
+	cursor: pointer;
+	border-top:0;
+	border-left:0;
+	border-right: 0;
+	border-bottom: 5px solid #21272b;
+}
+.input-submit input[type=submit]:hover{
+	background-color:#434d56;
+	border-top:0;
+	border-left:0;
+	border-right: 0;
+	border-bottom: 5px solid #2c333a;
+}
+
+.container-text{
+	width: 100%;
+	height: auto;
+	background-color:#151515;
+	color: #dad9d8;
+
+}
+
+.container-text-edit{
+	width: 100%;
+	max-width: 800px;
+	padding: 70px 30px 8px 30px;
+	margin:0 auto;
+
+}
+
+.container-text-edit h2{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.container-text-edit p{
+	line-height: 30px;
+	text-align: justify;
+	font-size:18px;
+
+}
+.arrow{
+	background-image: url(../images/logo.png);
+	width: 64px;
+	height: 64px;
+	margin:0 auto;
+	position: relative;
+	top:32px;
+	
+
+}
+
+.container-all-icon::after{
+	content: '';
+	clear: both;
+	display: block;
+
+}
+
+.container-all-icon{
+	width: 100%;
+	height: auto;
+	background-color: #ceccca;
+
+}
+
+.container-all-icon h2{
+	padding-top:60px;	
+	text-align: center;
+}
+.icon-img{
+	text-align: center;
+}
+
+.container-icon{
+	float: left;
+	width: 33.333%;
+	padding: 50px;
+}
+.container-icon h2{
+	margin-top: 20px;
+	padding-top: 0px;
+}
+
+.container-icon p{
+	text-align: justify;
+	margin-top: 20px;
+	font-size: 18px
+
+}
+
+.footer{
+	width: 100%;
+	height: auto;
+	background-color: black;
+	color: #dad9d8;
+	font-size: 18px;
+
+}
+
+.footer p{
+	text-align: center;
+	padding: 36px;
+}
+
+@media screen and (max-width:1024px){
+	.box-left{
+	float: left;
+	width: 100%;
+	max-width: 58%;
+	
+}
+.form{
+	float: right;
+	width: 100%;
+	max-width:40%;
+	height: 600px;
+
+}
+
+
+}
+
+@media screen and ( max-width:768px){
+	.container-banner{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+	.box-left{
+	float: none;
+	width: 100%;
+	max-width: 90%;
+	margin:30px auto;
+
+}
+
+	.form{
+	float: none;
+	width: 100%;
+	max-width:60%;
+	margin:30px auto;
+	position: static;
+}
+.container-icon{
+	float: none;
+	width: 100%;
+	padding: 30px;
+}
+.container-icon p{
+	float: none;
+	width: 100%;
+	max-width: 50%;
+	margin:20px auto 0px auto;
+}
+
+}
+
